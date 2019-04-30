@@ -10,9 +10,9 @@ DEFAULT = {
 
 MYSQL_DATABASE_CONFIG = {
     'host': 'localhost',
-    'dbname': 'dq_metadata_new',
+    'dbname': 'DQ_METADATA_NEW',
     'user': 'root',
-    'password': 'Cloudera',
+    'password': 'password',
     'port': '3306'
 }
 

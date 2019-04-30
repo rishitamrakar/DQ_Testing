@@ -20,9 +20,9 @@ RULE_LOG_REF_TABLE_NAME = config.DEFAULT['RULE_LOG_REF_TABLE_NAME']
 db = connect_db(DB_NAME)
 
 cursor = db.cursor()
-cursor.execute("truncate table dq_metadata_new.dq2_rule_log ;")
+cursor.execute("truncate table DQ_METADATA_NEW.DQ2_RULE_LOG ;")
 
-cursor.execute(" insert into dq_metadata_new.dq2_rule_log select * from dq_metadata_new.dq2_rule_log_dummy ")
+cursor.execute(" insert into DQ_METADATA_NEW.DQ2_RULE_LOG select * from DQ_METADATA_NEW.dq2_rule_log_dummy ")
 cursor.execute("commit ;")
 
 # Closing db connection
