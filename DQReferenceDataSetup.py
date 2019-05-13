@@ -35,4 +35,6 @@ cursor.execute(config.SQL_QUERY['COPY_TABLE_DATA'].format(DB=DB_NAME,SRC_TBL=RUL
 
 cursor.execute(config.SQL_QUERY['COMMIT_SQL'])
 
+cursor.execute(config.SQL_QUERY['TRUNCATE_SQL'].format(DB=DB_NAME,TABLE=RULE_LOG_TABLE_NAME))
+
 db.close()
